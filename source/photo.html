@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,18 +10,18 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="logo" src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
+      <img src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item site-list__item">
           <a href="index.html">
             Главная
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="photo.html">
+        <li class="site-list__item site-list__item--active">
+          <a>
             Фото и видео
           </a>
         </li>
@@ -57,38 +57,46 @@
       <div class="card">
         <h3 class="card__title">Неродные просторы</h3>
         <p class="card__description">Автор фото: Борис</p>
-        <img src="img/photo-vast.jpg" width="280" height="280" alt="Степь и закат.">
-        <div class="grade">
+        <div class="catalog__photo">
+          <img src="img/photo-vast.jpg" width="280" height="280" alt="Степь и закат.">
+        </div>
+        <a class="grade">
           <span class="grade__title">1350</span>
           <img src="img/icon-like.svg" width="23" height="21" alt="Лайк.">
-        </div>
+        </a>
       </div>
       <div class="card">
         <h3 class="card__title">Местная растительность</h3>
         <p class="card__description">Автор фото: Сергей</p>
-        <img src="img/photo-plants.jpg" width="280" height="280" alt="Дорога и закат.">
-        <div class="grade">
+        <div class="catalog__photo">
+          <img src="img/photo-plants.jpg" width="280" height="280" alt="Дорога и закат.">
+        </div>
+        <a class="grade">
           <span class="grade__title">143</span>
           <img src="img/icon-like.svg" width="23" height="21" alt="Лайк.">
-        </div>
+        </a>
       </div>
       <div class="card">
         <h3 class="card__title">Дорога на север</h3>
         <p class="card__description">Автор фото: Петр</p>
-        <img src="img/photo-road.jpg" width="280" height="280" alt="Дорога на север.">
-        <div class="grade">
+        <div class="catalog__photo">
+          <img src="img/photo-road.jpg" width="280" height="280" alt="Дорога на север.">
+        </div>
+        <a class="grade">
           <span class="grade__title">96</span>
           <img src="img/icon-like.svg" width="23" height="21" alt="Лайк.">
-        </div>
+        </a>
       </div>
       <div class="card">
         <h3 class="card__title">Мост дьявола</h3>
         <p class="card__description">Автор фото: Антон</p>
-        <img src="img/photo-canyon.jpg" width="280" height="280" alt="Каньон.">
-        <div class="grade">
+        <div class="catalog__photo">
+          <img src="img/photo-canyon.jpg" width="280" height="280" alt="Каньон.">
+        </div>
+        <a class="grade">
           <span class="grade__title">254</span>
           <img src="img/icon-like.svg" width="23" height="21" alt="Лайк.">
-        </div>
+        </a>
       </div>
     </section>
     <div class="warning">
@@ -109,14 +117,13 @@
         <b class="visually-hidden">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link" href="https://t.me/htmlacademy">Мы в Телеграме</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
           </li>
         </ul>
       </div>
