@@ -3,3 +3,27 @@
   margin: 0;
   list-style-type: none;
 }
+
+.main-nav__list a {
+  color: #000000;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 1038px;
+  }
+}
