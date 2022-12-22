@@ -5,21 +5,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(0, 0%, 92%);
+    background-color: rgb(235, 235, 235);
   }
 
   @media (min-width: @desktop-width) {
     width: 360px;
     position: absolute;
-    top: 188px;
+    bottom: 0;
     background-color: #00000041;
-    color: hsl(0, 0%, 100%);
+    color: rgb(255, 255, 255);
   }
 }
 
 .card__panel--line {
   @media (min-width: @desktop-width) {
     width: 1160px;
-    top: 320px;
+  }
+}
+
+.card__grade {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: @tablet-width) {
+    margin-bottom: 50px;
   }
 }
