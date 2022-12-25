@@ -11,7 +11,7 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
       </a>
       <nav class="main-header__nav main-nav">
@@ -57,101 +57,108 @@
       </div>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset class="input-text">
-          <legend class="input-text__title">Представьтесь:</legend>
+          <legend class="input-text__legend">Представьтесь:</legend>
           <ul class="input-text__list">
             <li class="input-text__item">
-              <label for="name-field">Имя*:</label>
+              <label class="input-text__label" for="name-field">Имя*:</label>
               <div class="input-text__field">
-                <input type="text" name="name" id="name-field" placeholder="Пётр">
+                <input class="fieid" type="text" name="name" id="name-field" value="Пётр">
               </div>
             </li>
             <li class="input-text__item">
-              <label for="surname-field">Фамилия*:</label>
+              <label class="input-text__label" for="surname-field">Фамилия*:</label>
               <div class="input-text__field">
-                <input type="text" name="surname" id="surname-field" placeholder="Пустота">
+                <input class="fieid" type="text" name="surname" id="surname-field" value="Пустота">
               </div>
             </li>
             <li class="input-text__item">
-              <label for="midlename-field">Отчество*:</label>
+              <label class="input-text__label" for="midlename-field">Отчество*:</label>
               <div class="input-text__field">
-                <input type="text" name="midlename" id="midlename-field" placeholder="Викторович">
+                <input class="fieid" type="text" name="midlename" id="midlename-field" value="Викторович">
               </div>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="input-text input-text--image">
-          <legend class="input-text__title">Контактная информация:</legend>
+        <fieldset class="input-text">
+          <legend class="input-text__legend">Контактная информация:</legend>
           <ul class="input-text__list">
             <li class="input-text__item">
-              <label for="telephone-field">Контактный телефон*:</label>
-              <div class="input-text__field">
-                <input type="number" name="telephone" id="telephone-field" placeholder="Введите телефон">
+              <label class="input-text__label" for="telephone-field">Контактный телефон*:</label>
+              <div class="input-text__field--image">
+                <input class="fieid" type="number" name="telephone" id="telephone-field" placeholder="Введите телефон">
                 <img src="img/phone.svg" width="18" height="18" alt="Телефон.">
               </div>
             </li>
             <li class="input-text__item">
-              <label for="email-field">Электронная почта*:</label>
-              <div class="input-text__field">
-                <input type="email" name="email" id="email-field" placeholder="Введите e-mail">
+              <label class="input-text__label" for="email-field">Электронная почта*:</label>
+              <div class="input-text__field--image">
+                <input class="fieid" type="email" name="email" id="email-field" placeholder="Введите e-mail">
                 <img src="img/email.svg" width="18" height="18" alt="Email.">
               </div>
             </li>
           </ul>
         </fieldset>
         <fieldset class="input-radio">
-          <legend class="input-radiog__title">Ваше общее впечатление:</legend>
+          <legend class="input-radio__legend">Ваше общее впечатление:</legend>
           <ul class="input-radio__list">
             <li class="input-radio__item">
-              <label class="input-radio__label">
-                <input class="input-radio__input" type="radio" name="input-radio-plus" checked>
-                <span class="input-radio__title">Скорее положительное</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="radio" name="input-radio-plus" checked>
+                <span class="control__mark"></span>
+                <span class="control__title">Скорее положительное</span>
               </label>
             </li>
             <li class="input-radio__item">
-              <label class="input-radio__label">
-                <input class="input-radio__input" type="radio" name="input-radio-minus">
-                <span class="input-radio__title">Скорее отрицательное</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="radio" name="input-radio-minus">
+                <span class="control__mark"></span>
+                <span class="control__title">Скорее отрицательное</span>
               </label>
             </li>
             <li class="input-radio__item">
-              <label class="input-radio__label">
-                <input class="input-radio__input" type="radio" name="input-radio-neutral">
-                <span class="input-radio__title">Затрудняюсь ответить</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="radio" name="input-radio-neutral">
+                <span class="control__mark"></span>
+                <span class="control__title">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="input-checkbox">
-          <legend class="input-checkbox__title">Посещенные достопримечательности:</legend>
+          <legend class="input-checkbox__legend">Посещенные достопримечательности:</legend>
           <ul class="input-checkbox__list">
             <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="input-checkbox__input" type="checkbox" name="swimming-pool" checked>
-                <span class="control-label">Мост Дьявола</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__title">Мост Дьявола</span>
               </label>
             </li>
             <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="input-checkbox__input" type="checkbox" name="input-checkbox-pool" checked>
-                <span class="control-label">Гора-Колокол</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="input-checkbox-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__title">Гора-Колокол</span>
               </label>
             </li>
             <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="input-checkbox__input" type="checkbox" name="input-checkbox-pool" checked>
-                <span class="control-label">Слайд-парк</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="input-checkbox-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__title">Слайд-парк</span>
               </label>
             </li>
             <li class="input-checkbox__item">
-              <label class="input-checkbox__label">
-                <input class="input-checkbox__input" type="checkbox" name="input-checkbox-pool">
-                <span class="control-label">Красные скалы</span>
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="input-checkbox-pool">
+                <span class="control__mark"></span>
+                <span class="control__title">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="input-textarea">
-          <legend class="input-textarea__title">Опишите свои эмоции:</legend>
+          <legend class="input-textarea__legend">Опишите свои эмоции:</legend>
           <textarea rows="5">Опишите подробно все свои восторги</textarea>
         </fieldset>
         <div class="form-control">

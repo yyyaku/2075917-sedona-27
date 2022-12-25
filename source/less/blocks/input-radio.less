@@ -1,0 +1,34 @@
+.input-radio {
+  width: 100%;
+}
+
+.input-radio__legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input-radio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.input-radio__item {
+  flex-basis: 50%;
+}

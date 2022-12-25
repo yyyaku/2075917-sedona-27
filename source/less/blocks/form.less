@@ -1,8 +1,7 @@
 form {
-  width: 280px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 60px;
@@ -13,6 +12,12 @@ form {
   }
 }
 
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .form {
   text-align: center;
   text-transform: uppercase;
@@ -20,11 +25,9 @@ form {
 
 .form__slogan {
   margin: 0;
-  padding: 0;
   margin-bottom: 24px;
 }
 
 .form__intro {
   margin: 0;
-  padding: 0;
 }
