@@ -1,8 +1,38 @@
 .product {
-  background-image: url("../img/bg-back-desktop.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-color: #314d59;
-  background-position: absolute;
-  padding: 90px 19px 85px 19px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.product__title {
+  margin: 0;
+  width: 284px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    margin-bottom: 40px;
+  }
+}
+
+.product__description {
+  margin: 0;
+  width: 284px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    margin-bottom: 44px;
+  }
 }
