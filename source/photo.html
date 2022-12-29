@@ -14,30 +14,32 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
       </a>
-      <nav class="main-header__nav main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма Отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
@@ -204,7 +206,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy.">
@@ -213,6 +215,7 @@
       </div>
     </footer>
   </div>
-</body>>
+  <script src="./js/script.js"></script>
+</body>
 
 </html>

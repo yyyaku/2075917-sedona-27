@@ -1,0 +1,33 @@
+.control-radio {
+  display: block;
+  padding: 10px 0 10px 62px;
+  position: relative;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.control-radio::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.control-radio::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: url("../img/radio.svg") no-repeat;
+  background-size: 16px 16px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+}

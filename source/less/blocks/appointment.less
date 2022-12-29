@@ -1,27 +1,46 @@
 .appointment {
-  padding: 38px 18px 49px 18px;
   text-align: center;
   text-transform: uppercase;
 }
 
+.appointment__wrapper {
+  padding: 38px 18px 49px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 155px 58px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 61px 371px 66px 371px;
+  }
+}
+
 .appointment__title {
   margin: 0;
+  margin-bottom: 35px;
+  line-height: 26px;
+  font-weight: bold;
+  font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+    line-height: 26px;
+    font-weight: bold;
+    font-size: 30px;
+  }
 }
 
 .appointment__description {
   margin: 0;
   margin-bottom: 32px;
-}
-
-.appointment__wrapper {
-  width: 284px;
-  margin: 0 auto;
+  line-height: 21px;
+  font-size: 14px;
 
   @media (min-width: @tablet-width) {
-    width: 458px;
+    margin-bottom: 40px;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 458px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
   }
 }

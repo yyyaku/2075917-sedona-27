@@ -1,29 +1,116 @@
-.main-nav__list {
+.main-nav {
+  position: relative;
+  width: auto;
+  min-height: 56px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 55px;
+  height: 55px;
   padding: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 22px;
+  height: 4px;
+  background-color: #80b2d1;
+  box-shadow: 0 10px 0 0 #80b2d1, 0 20px 0 0 #81b3d2;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#80b2d1, 30%);
+  box-shadow:
+    0 10px 0 0 fade(#80b2d1, 30%),
+    0 20px 0 0 fade(#80b2d1, 30%);
+}
+
+.main-header__logo .main-nav--opened {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+  background-color: #81b3d2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.main-nav--closed .site-list__item {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+.main-nav--nojs .site-list__item--active a {
+  text-align: center;
+}
+
+.main-nav__list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .main-nav__list a {
   color: #000000;
-}
-
-
-@media (min-width: @tablet-width) {
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    width: 690px;
-    margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav__list {
-    width: 1038px;
-  }
 }
