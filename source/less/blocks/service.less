@@ -6,19 +6,17 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .service__item {
-  width: 100%;
-  padding: 33px 18px 0 18px;
-
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+    padding: 25px 18px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: @tablet-width) {
@@ -28,31 +26,59 @@
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 69px 50px;
+    padding: 68px 50px;
   }
 }
 
-@media (max-width: @tablet-width) {
-  .service__text {
-    text-align: left;
+.service__text {
+  @media (max-width: @mobile-width-only) {
     width: 237px;
+    text-align: left;
   }
 }
 
 .service__title {
   margin: 0;
   margin-bottom: 16px;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-weight: bold;
+  font-size: 18px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .service__description {
   margin: 0;
+  text-transform: uppercase;
+  line-height: 21px;
+  font-size: 14px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .service__icon {
-  margin: 0 auto;
+  width: 40px;
 
   @media (min-width: @tablet-width) {
     width: 70px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,21 +1,32 @@
 .input-text {
   width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    margin-bottom: 70px;
   }
 }
 
-
 .input-text__legend {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
   padding: 0;
-  margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .input-text__list {
@@ -25,8 +36,23 @@
   text-transform: uppercase;
 }
 
-.fieid {
-  width: 280px;
+.input-text__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text__label {
+  flex-basis: 100%;
+  margin-left: 16px;
+}
+
+.input-text__item--image {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-text__input {
   margin: 0;
   padding: 16px 16px;
   font: inherit;
@@ -36,6 +62,8 @@
   flex-grow: 1;
 }
 
-.input-text__field--image {
-  display: flex;
+.input-text__icon {
+  width: 58px;
+  padding: 20px;
+  background-color: #e6e6e6;
 }

@@ -1,5 +1,9 @@
 .input-checkbox {
   width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
 }
 
 .input-checkbox__legend {
@@ -7,10 +11,13 @@
   font-weight: 700;
   line-height: 26px;
   padding: 0;
-  margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .input-checkbox__list {
@@ -30,5 +37,11 @@
 }
 
 .input-checkbox__item {
-  flex-basis: 50%;
+  @media (min-width: @tablet-width) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 25%;
+  }
 }
