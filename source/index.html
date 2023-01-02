@@ -45,13 +45,11 @@
     <main class="main-container">
       <section class="index-image">
         <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-        <div class="product__wrapper">
-          <picture>
-            <source srcset="img/sedona-index-tablet.svg" media="(min-width: 768px)">
-            <source srcset="img/sedona-index-desktop.svg" media="(min-width: 1200px)">
-            <img src="img/sedona-index-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
-          </picture>
-        </div>
+        <picture>
+          <source srcset="img/sedona-index-tablet.svg" media="(min-width: 768px)">
+          <source srcset="img/sedona-index-desktop.svg" media="(min-width: 1200px)">
+          <img src="img/sedona-index-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <div class="product">
         <h1 class="product__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -69,9 +67,12 @@
               </div>
               <div class="advantage__picture">
                 <picture>
-                  <source srcset="img/main-city-tablet.jpg" media="(min-width: 768px)">
-                  <source srcset="img/main-city-desktop.jpg" media="(min-width: 1200px)">
-                  <img src="img/main-city-mobile.jpg" width="320" height="260" alt="Город Седона.">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/main-city-desktop.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/main-city-tablet.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img src="img/main-city-mobile.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260"
+                    alt="Город Седона.">
                 </picture>
               </div>
               <ul class="service">
@@ -112,9 +113,12 @@
               </div>
               <div class="advantage__picture">
                 <picture>
-                  <source srcset="img/main-bridge-tablet.jpg" media="(min-width: 768px)">
-                  <source srcset="img/main-bridge-desktop.jpg" media="(min-width: 1200px)">
-                  <img src="img/main-bridge-mobile.jpg" width="320" height="260" alt="Каньон Седона.">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/main-bridge-desktop 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/main-bridge-tablet.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img src="img/main-bridge-mobile.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320"
+                    height="260" alt="Каньон Седона.">
                 </picture>
               </div>
             </li>

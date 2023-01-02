@@ -7,13 +7,25 @@
   display: flex;
   justify-content: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-form-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-form-tablet.jpg");
     padding: 95px 155px 117px 155px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-form-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/back-form-desktop.jpg");
     padding: 100px 370px 120px 370px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-form-desktop@2x.jpg");
+    }
   }
 }
