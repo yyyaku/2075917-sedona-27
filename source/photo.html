@@ -11,35 +11,35 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
-      </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Форма Отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__logo">
+            <a href="index.html">
+              <img src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -63,9 +63,11 @@
         <div class="card card--line">
           <div class="card__photo">
             <picture>
-              <source srcset="img/photo-vast-tablet.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-vast-desktop.jpg" media="(min-width: 1200px)">
-              <img src="img/photo-vast-mobile.jpg" width="280" height="280" alt="Степь и закат.">
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-vast-desktop.jpg 1x, img/photo-vast-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-vast-tablet.jpg 1x, img/photo-vast-tablet@2x.jpg 2x">
+              <img src="img/photo-vast-mobile.jpg" srcset="img/photo-vast-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Степь и закат.">
             </picture>
           </div>
           <div class="card__panel">
@@ -87,9 +89,12 @@
         <div class="card">
           <div class="card__photo">
             <picture>
-              <source srcset="img/photo-plants-tablet.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-plants-desktop.jpg" media="(min-width: 1200px)">
-              <img src="img/photo-plants-mobile.jpg" width="280" height="280" alt="Дорога и закат.">
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-plants-desktop.jpg 1x, img/photo-plants-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-plants-tablet.jpg 1x, img/photo-plants-tablet@2x.jpg 2x">
+              <img src="img/photo-plants-mobile.jpg" srcset="img/photo-plants-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Дорога и закат.">
             </picture>
           </div>
           <div class="card__panel">
@@ -111,9 +116,11 @@
         <div class="card">
           <div class="card__photo">
             <picture>
-              <source srcset="img/photo-road-tablet.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-road-desktop.jpg" media="(min-width: 1200px)">
-              <img src="img/photo-road-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-road-desktop.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-road-tablet 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Дорога на север.">
             </picture>
           </div>
           <div class="card__panel">
@@ -135,9 +142,11 @@
         <div class="card">
           <div class="card__photo">
             <picture>
-              <source srcset="img/photo-canyon-tablet.jpg" media="(min-width: 768px)">
-              <source srcset="img/photo-canyon-desktop.jpg" media="(min-width: 1200px)">
-              <img src="img/photo-canyon-mobile.jpg" width="280" height="280" alt="Каньон.">
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-canyon-desktop.jpg 1x, img/photo-canyon-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-canyon-tablet 1x, img/photo-canyon-tablet@2x.jpg 2x">
+              <img src="img/photo-canyon-mobile.jpg" srcset="img/photo-canyon-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Каньон.">
             </picture>
           </div>
           <div class="card__panel">
