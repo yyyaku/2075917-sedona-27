@@ -45,8 +45,9 @@
     0 20px 0 0 fade(#80b2d1, 30%);
 }
 
-.main-header {
-  .main-nav--opened .main-header__logo {
+
+.main-nav--closed .site-list__item {
+  @media (max-width: @mobile-width-only) {
     display: none;
   }
 }
@@ -83,12 +84,6 @@
   }
 }
 
-.main-nav--closed .site-list__item {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
@@ -101,10 +96,6 @@
 
 .main-nav--nojs .site-list__item {
   display: block;
-}
-
-.main-nav--nojs .site-list__item--active a {
-  text-align: center;
 }
 
 .main-nav__list {

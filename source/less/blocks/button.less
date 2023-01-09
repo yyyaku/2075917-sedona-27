@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}
+
+.button__appointment {
+  padding: 16px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 121px;
+  }
+}
+
+.form-control__button {
+  padding: 16px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 71px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 101px;
+  }
+}

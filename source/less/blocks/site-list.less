@@ -10,7 +10,14 @@
   flex-basis: 20%;
 }
 
+.site-list__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    margin-left: 20%;
+  }
+}
+
 .site-list a {
+  position: relative;
   display: block;
   text-align: center;
   padding: 17px 0 12px 0;
@@ -33,24 +40,6 @@
   }
 }
 
-.site-list__logo {
-  flex-basis: 20%;
-  display: flex;
-  justify-content: center;
-}
-
-.site-list__logo a {
-  padding: 0;
-  position: absolute;
-  z-index: 2;
-  background-color: #ffffff00;
-  border: 0;
-}
-
 .main-nav--closed .site-list__item--active a {
   color: #766357;
-}
-
-.main-nav--opened .site-list__logo a {
-  display: none;
 }
