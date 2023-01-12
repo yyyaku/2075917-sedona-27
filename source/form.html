@@ -80,67 +80,71 @@
               <label class="input-text__label" for="telephone-field">Контактный телефон*:</label>
               <input class="input-text__input" type="number" name="telephone" id="telephone-field"
                 placeholder="Введите телефон">
-              <div class="input-text__icon">
-                <img src="img/phone.svg" width="18" height="18" alt="Телефон.">
-              </div>
+              <svg class="input-text__icon" width="18" height="18">
+                <use href="img/sprite.svg#phone"></use>
+              </svg>
             </li>
             <li class="input-text__item input-text__item--image">
               <label class="input-text__label" for="email-field">Электронная почта*:</label>
               <input class="input-text__input" type="email" name="email" id="email-field" placeholder="Введите e-mail">
-              <div class="input-text__icon">
-                <img src="img/email.svg" width="18" height="18" alt="Email.">
-              </div>
+              <svg class="input-text__icon" width="18" height="18">
+                <use href="img/sprite.svg#email"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
         <fieldset class="input-radio">
-          <legend class="input-radio__legend">Ваше общее впечатление:</legend>
+          <div class="input-radio__line">
+            <h2 class="input-radio__title">Ваше общее впечатление:</h2>
+          </div>
           <ul class="input-radio__list">
             <li class="input-radio__item">
               <label class="control-radio">
-                <input class="visually-hidden control__input" type="radio" name="input-radio-plus" checked>
-                <span class="control__title">Скорее положительное</span>
+                <input class="visually-hidden control-radio__input" type="radio" name="input-radio-plus" checked>
+                <span class="control-radio__title">Скорее положительное</span>
               </label>
             </li>
             <li class="input-radio__item">
               <label class="control-radio">
-                <input class="visually-hidden control__input" type="radio" name="input-radio-minus">
-                <span class="control__title">Скорее отрицательное</span>
+                <input class="visually-hidden control-radio__input" type="radio" name="input-radio-minus">
+                <span class="control-radio__title">Скорее отрицательное</span>
               </label>
             </li>
             <li class="input-radio__item">
               <label class="control-radio">
-                <input class="visually-hidden control__input" type="radio" name="input-radio-neutral">
-                <span class="control__title">Затрудняюсь ответить</span>
+                <input class="visually-hidden control-radio__input" type="radio" name="input-radio-neutral">
+                <span class="control-radio__title">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="input-checkbox">
-          <legend class="input-checkbox__legend">Посещенные<br> достопримечательности:</legend>
+          <div class="input-checkbox__line">
+            <h2 class="input-checkbox__title">Посещенные<br> достопримечательности:</h2>
+          </div>
           <ul class="input-checkbox__list">
             <li class="input-checkbox__item">
               <label class="control-checkbox">
-                <input class="visually-hidden control__input" type="checkbox" name="swimming-pool" checked>
-                <span class="control__title">Мост Дьявола</span>
+                <input class="visually-hidden control-checkbox__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control-checkbox__title">Мост Дьявола</span>
               </label>
             </li>
             <li class="input-checkbox__item">
               <label class="control-checkbox">
-                <input class="visually-hidden control__input" type="checkbox" name="input-checkbox-pool" checked>
-                <span class="control__title">Гора-Колокол</span>
+                <input class="visually-hidden control-checkbox__input" type="checkbox" name="input-checkbox-pool" checked>
+                <span class="control-checkbox__title">Гора-Колокол</span>
               </label>
             </li>
             <li class="input-checkbox__item">
               <label class="control-checkbox">
-                <input class="visually-hidden control__input" type="checkbox" name="input-checkbox-pool" checked>
-                <span class="control__title">Слайд-парк</span>
+                <input class="visually-hidden control-checkbox__input" type="checkbox" name="input-checkbox-pool" checked>
+                <span class="control-checkbox__title">Слайд-парк</span>
               </label>
             </li>
             <li class="input-checkbox__item">
               <label class="control-checkbox">
-                <input class="visually-hidden control__input" type="checkbox" name="input-checkbox-pool">
-                <span class="control__title">Красные скалы</span>
+                <input class="visually-hidden control-checkbox__input" type="checkbox" name="input-checkbox-pool">
+                <span class="control-checkbox__title">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -150,7 +154,7 @@
           <textarea class="input-textarea__input" rows="10">Опишите подробно все свои восторги</textarea>
         </fieldset>
         <div class="form-control">
-          <button class="button form-control__button" type="submit">Отправить отзыв</button>
+          <button class="button button__form-control" type="submit">Отправить отзыв</button>
           <p class="form-control__description">* — обязательные поля</p>
         </div>
       </form>
@@ -164,30 +168,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"
-                    fill="white" />
+                <svg class="social__icon" width="24" height="14">
+                  <use href="img/sprite.svg#icon-vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"
-                    fill="white" />
+                <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18">
+                  <use href="img/sprite.svg#icon-telegram"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Телеграме</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z"
-                    fill="white" />
+                <svg class="social__icon" width="20" height="14">
+                  <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Ютубе</span>
               </a>
@@ -196,8 +194,10 @@
         </div>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <b class="copyright__text">Разработано</b>
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy.">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__icon" width="24" height="29">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

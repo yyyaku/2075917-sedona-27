@@ -8,7 +8,7 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
-import sprite from 'gulp-svgstore';
+import svgstore from 'gulp-svgstore';
 import deleteAsync from 'del';
 import browser from 'browser-sync';
 
@@ -68,13 +68,13 @@ const createWebp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src(['source/img/*.svg', '!source/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
-/*
+
 const sprite = () => {
-  return gulp.src('source/icons/*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -82,7 +82,7 @@ const sprite = () => {
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
-*/
+
 
 //Copy
 
@@ -143,6 +143,7 @@ const build = gulp.series(
     html,
     scripts,
     svg,
+    sprite,
     createWebp
   ));
 
@@ -157,6 +158,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    sprite,
     createWebp
   ),
   gulp.series(

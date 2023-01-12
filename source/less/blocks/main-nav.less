@@ -52,6 +52,12 @@
   }
 }
 
+.main-nav--opened {
+  @media (max-width: @mobile-width-only) {
+    z-index: 3;
+  }
+}
+
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
@@ -87,7 +93,6 @@
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
-
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
