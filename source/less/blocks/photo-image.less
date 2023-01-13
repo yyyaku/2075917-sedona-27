@@ -1,31 +1,39 @@
 .photo-image {
-  background-image: url("../img/back-catalog-mobile.jpg");
+  background-image: url("../img/triangle.svg"), url("../img/back-catalog-mobile.jpg");
   background-size: cover;
+  background-position: bottom, center;
   background-repeat: no-repeat;
   background-color: #314d59;
-  padding: 52px 19px 67px 19px;
-  display: flex;
-  justify-content: center;
+  padding: 52px 0 67px 0;
+  text-align: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-catalog-mobile@2x.jpg");
+    background-image: url("../img/triangle.svg"), url("../img/back-catalog-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/back-catalog-tablet.jpg");
-    padding: 95px 155px 117px 155px;
+    background-image: url("../img/triangle.svg"), url("../img/back-catalog-tablet.jpg");
+    padding: 95px 0 117px 0;
+    background-size: 155%, cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-catalog-tablet@2x.jpg");
+      background-image: url("../img/triangle.svg"), url("../img/back-catalog-tablet@2x.jpg");
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/back-catalog-desktop.jpg");
-    padding: 100px 370px 120px 370px;
+    background-image: url("../img/triangle.svg"), url("../img/back-catalog-desktop.jpg");
+    padding: 100px 0 120px 0;
+    background-size: contain, cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-catalog-desktop@2x.jpg");
+      background-image: url("../img/triangle.svg"), url("../img/back-catalog-desktop@2x.jpg");
     }
+  }
+}
+
+.photo-image__image {
+  @media (min-width: @tablet-width) {
+    width: 457px;
   }
 }

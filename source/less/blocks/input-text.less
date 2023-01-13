@@ -49,19 +49,30 @@
   line-height: 21px;
 }
 
-.input-text__item--image {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-}
-
 .input-text__input {
   margin: 0;
   padding: 16px 16px;
   font: inherit;
   font-weight: 700;
-  background-color: rgb(242, 242, 242);
+  background-color: #f2f2f2;
   border: 0;
   flex-grow: 1;
+}
+
+.input-text__item--image {
+  .input-text__input {
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 58px;
+  }
+
+  .input-text__input--email {
+    background-image: url("../img/email.svg");
+    background-size: 16px 12px;
+  }
+
+  .input-text__input--phone {
+    background-image: url("../img/phone.svg");
+    background-size: 18px 18px;
+  }
 }

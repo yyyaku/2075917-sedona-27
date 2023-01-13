@@ -8,7 +8,14 @@
   font-size: 18px;
 }
 
-.control-radio::before {
+.control-radio__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.control-radio__title::before {
   content: "";
   display: block;
   width: 46px;
@@ -21,15 +28,21 @@
   z-index: 1;
 }
 
-.control-radio::after {
+.control-radio__title::after {
   content: "";
   display: block;
-  width: 46px;
-  height: 46px;
-  background: url("../img/sprite.svg#radio") no-repeat;
-  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: 2;
+  opacity: 0;
 }
+
+.control-radio__input:checked + .control-radio__title::after {
+  opacity: 1;
+}
+
