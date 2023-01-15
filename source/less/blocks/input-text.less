@@ -57,22 +57,82 @@
   background-color: #f2f2f2;
   border: 0;
   flex-grow: 1;
+  position: relative;
+  min-height: 58px;
 }
 
-.input-text__item--image {
+.input-text__item--phone {
+  position: relative;
+
   .input-text__input {
     background-repeat: no-repeat;
     background-position: right 20px center;
     padding-right: 58px;
   }
+}
 
-  .input-text__input--email {
-    background-image: url("../img/email.svg");
-    background-size: 16px 12px;
-  }
+.input-text__item--phone::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/phone.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 4;
+}
 
-  .input-text__input--phone {
-    background-image: url("../img/phone.svg");
-    background-size: 18px 18px;
+.input-text__item--phone::before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.input-text__item--email {
+  position: relative;
+
+  .input-text__input {
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 58px;
   }
+}
+
+.input-text__item--email::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/email.svg");
+  background-size: 16px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.input-text__item--email::before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }

@@ -24,4 +24,19 @@
 .advantages__item {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.advantages__item:not(:last-child) {
+  .advantage::before {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      width: 90%;
+      background-color: #d6d6d6;
+      z-index: 0;
+    }
+  }
 }

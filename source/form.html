@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -75,14 +79,14 @@
         <fieldset class="input-text">
           <legend class="input-text__legend">Контактная информация:</legend>
           <ul class="input-text__list">
-            <li class="input-text__item input-text__item--image">
+            <li class="input-text__item input-text__item--phone">
               <label class="input-text__label" for="telephone-field">Контактный телефон*:</label>
-              <input class="input-text__input input-text__input--phone" type="number" name="telephone"
+              <input class="input-text__input" type="number" name="telephone"
                 id="telephone-field" placeholder="Введите телефон" required>
             </li>
-            <li class="input-text__item input-text__item--image">
+            <li class="input-text__item input-text__item--email">
               <label class="input-text__label" for="email-field">Электронная почта*:</label>
-              <input class="input-text__input input-text__input--email" type="email" name="email" id="email-field"
+              <input class="input-text__input" type="email" name="email" id="email-field"
                 placeholder="Введите e-mail" required>
             </li>
           </ul>
@@ -200,24 +204,28 @@
       </div>
     </footer>
 
-    <div class="form-modal">
-      <div class="form-modal__text">
-        <h2 class="form-modal__title">Ваш отзыв отправлен!</h2>
-        <p class="form-modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В
-          ближайшее время мы опубликуем его на сайте.</p>
-      </div>
-      <div class="form-modal__button">
-        <button class="button button--success">Закрыть окно</button>
+    <div class="modal-container modal-container--close">
+      <div class="form-modal">
+        <div class="form-modal__text">
+          <h2 class="form-modal__title">Ваш отзыв отправлен!</h2>
+          <p class="form-modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В
+            ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="form-modal__button">
+          <button class="button button--success">Закрыть окно</button>
+        </div>
       </div>
     </div>
 
-    <div class="form-modal form-modal--error">
-      <div class="form-modal__text">
-        <h2 class="form-modal__title">Что-то пошло не так!</h2>
-        <p class="form-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли
-          их заполнить</p>
+    <div class="modal-container modal-container--close">
+      <div class="form-modal form-modal--closed form-modal--error">
+        <div class="form-modal__text">
+          <h2 class="form-modal__title">Что-то пошло не так!</h2>
+          <p class="form-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли
+            их заполнить</p>
+        </div>
+        <button class="button button--error">OK</button>
       </div>
-      <button class="button button--error">OK</button>
     </div>
 
   </div>
