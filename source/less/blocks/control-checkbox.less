@@ -8,6 +8,9 @@
   font-size: 18px;
 }
 
+.control-checkbox__input:checked + .control-checkbox__title::after {
+  opacity: 1;
+}
 
 .control-checkbox__title {
   font-size: 18px;
@@ -28,19 +31,29 @@
   z-index: 1;
 }
 
+.control-checkox__title:hover::before {
+  background-color: #e5e5e5;
+}
+
+.control-checkbox__title:active::before {
+  background-color: #d5d5d5;
+}
+
 .control-checkbox__title::after {
   content: "";
   display: block;
   width: 22px;
   height: 16px;
-  background: url("../img/checkbox.svg") no-repeat;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 12px;
   opacity: 0;
   z-index: 2;
 }
 
-.control-checkbox__input:checked + .control-checkbox__title::after {
-  opacity: 1;
+.control-checkbox__title:active::after {
+  opacity: 0.3;
 }

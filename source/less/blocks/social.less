@@ -27,8 +27,20 @@
   }
 
   &:active {
-    .social__icon {
-      opacity: 0.3;
-    }
+    background-color: #5496bd;
   }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon {
+  fill: #ffffff;
+}
+
+.social__item:active .social__icon {
+  fill: #87b5d1;
 }

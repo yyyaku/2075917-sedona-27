@@ -22,22 +22,22 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#">
               Форма Отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -47,7 +47,11 @@
     <main class="main-container">
       <section class="form-image">
         <h2 class="visually-hidden">Седона</h2>
-        <img class="form-image__image" src="img/sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source srcset="img/sedona-tablet.svg" media="(min-width: 768px)">
+          <img class="form-image__image" src="img/sedona-mobile.svg" width="282" height="214"
+            alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <div class="content">
         <h1 class="content__slogan">Оставьте свой отзыв</h1>
@@ -57,7 +61,7 @@
       </div>
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset class="input-text">
-          <legend class="input-text__legend">Представьтесь:</legend>
+          <h2 class="input-text__title">Представьтесь:</h2>
           <ul class="input-text__list">
             <li class="input-text__item">
               <label class="input-text__label" for="name-field">Имя*:</label>
@@ -76,12 +80,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="input-text">
-          <legend class="input-text__legend">Контактная информация:</legend>
+        <fieldset class="input-text input-text--image">
+          <h2 class="input-text__title">Контактная информация:</h2>
           <ul class="input-text__list">
             <li class="input-text__item input-text__item--phone">
               <label class="input-text__label" for="telephone-field">Контактный телефон*:</label>
-              <input class="input-text__input" type="number" name="telephone" id="telephone-field"
+              <input class="input-text__input" type="tel" name="telephone" id="telephone-field"
                 placeholder="Введите телефон" required>
             </li>
             <li class="input-text__item input-text__item--email">
@@ -151,7 +155,9 @@
           </ul>
         </fieldset>
         <fieldset class="input-textarea">
-          <legend class="input-textarea__legend">Опишите свои эмоции:</legend>
+          <div class="input-textarea__line">
+            <h2 class="input-textarea__title">Опишите свои эмоции:</h2>
+          </div>
           <textarea class="input-textarea__input" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form-control">

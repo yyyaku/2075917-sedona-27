@@ -149,7 +149,7 @@ const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ));
+));
 
 //Default
 
@@ -168,4 +168,4 @@ export default gulp.series(
   gulp.series(
     server,
     watcher
-  ));
+));

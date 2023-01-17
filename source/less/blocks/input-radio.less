@@ -4,6 +4,20 @@
   margin: 0;
   padding: 0;
   margin-bottom: 34px;
+  position: relative;
+}
+
+.input-radio::after {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: -20px;
+    height: 1px;
+    min-width: 320px;
+    background-color: #e5e5e5;
+    z-index: 0;
+  }
 }
 
 .input-radio__line {
