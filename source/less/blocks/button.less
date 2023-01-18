@@ -19,6 +19,7 @@
   }
 
   &:active {
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -28,7 +29,7 @@
   }
 }
 
-.button__appointment {
+.button--appointment {
   padding: 16px 49px;
 
   @media (min-width: @tablet-width) {
@@ -36,7 +37,7 @@
   }
 }
 
-.form-control__button {
+.button--form-control {
   padding: 16px 49px;
 
   @media (min-width: @tablet-width) {
@@ -45,5 +46,21 @@
 
   @media (min-width: @tablet-width) {
     padding: 16px 101px;
+  }
+}
+
+.button--error {
+  padding: 18px 64px 14px 64px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 104px 14px 104px;
+  }
+}
+
+.button--success {
+  padding: 18px 60px 10px 60px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 140px 14px 140px;
   }
 }

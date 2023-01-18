@@ -1,31 +1,44 @@
 .form-image {
-  background-image: url("../img/back-form-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #314d59;
-  padding: 52px 19px 67px 19px;
-  display: flex;
-  justify-content: center;
+  padding: 52px 0 67px 0;
+  text-align: center;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-form-mobile@2x.jpg");
+    background-image: url("../img/back-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/back-form-tablet.jpg");
-    padding: 95px 155px 117px 155px;
+    background-image: url("../img/back-tablet.jpg");
+    padding: 100px 0 120px 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-form-tablet@2x.jpg");
+      background-image: url("../img/back-tablet@2x.jpg");
     }
   }
+}
 
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/back-form-desktop.jpg");
-    padding: 100px 370px 120px 370px;
+.form-image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../img/triangle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 2;
+}
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-form-desktop@2x.jpg");
-    }
+.form-image__image {
+  @media (min-width: @tablet-width) {
+    width: 460px;
   }
 }

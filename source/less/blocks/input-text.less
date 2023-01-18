@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 60px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 280px;
@@ -15,8 +16,50 @@
   }
 }
 
-.input-text__legend {
+.input-text::after {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: -20px;
+    height: 2px;
+    min-width: 320px;
+    background-color: #e5e5e5;
+    z-index: 0;
+  }
+}
+
+.input-text--image {
+  @media (min-width: @desktop-width) {
+    width: 402px;
+  }
+}
+
+.input-text:first-child::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    right: -44px;
+    height: 100%;
+    width: 2px;
+    background-color: #e7e5e5;
+    z-index: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    right: -64px;
+    height: 100%;
+    width: 2px;
+    background-color: #e7e5e5;
+    z-index: 0;
+  }
+}
+
+.input-text__title {
   padding: 0;
+  margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -40,6 +83,7 @@
 .input-text__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .input-text__label {
@@ -49,24 +93,100 @@
   line-height: 21px;
 }
 
-.input-text__item--image {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .input-text__input {
   margin: 0;
-  padding: 16px 16px;
+  padding: 16px;
   font: inherit;
   font-weight: 700;
-  background-color: rgb(242, 242, 242);
+  background-color: #f2f2f2;
   border: 0;
   flex-grow: 1;
+  position: relative;
+  min-height: 58px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    padding: 12px;
+  }
 }
 
-.input-text__icon {
+.input-text__item--phone {
+  position: relative;
+}
+
+.input-text__item--phone .input-text__input {
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 58px;
+}
+
+.input-text__item--phone::after {
+  content: "";
+  display: block;
   width: 58px;
-  padding: 20px;
+  height: 58px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/phone.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.input-text__item--phone::before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
   background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.input-text__item--email {
+  position: relative;
+}
+
+.input-text__item--email .input-text__input {
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 58px;
+}
+
+.input-text__item--email::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/email.svg");
+  background-size: 16px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.input-text__item--email::before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
