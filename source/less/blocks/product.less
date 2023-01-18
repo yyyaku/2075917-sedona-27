@@ -1,5 +1,5 @@
 .product {
-  padding: 32px 18px;
+  padding: 32px 18px 53px 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,7 @@
   @media (min-width: @tablet-width) {
     padding: 48px 0 55px 0;
     margin: 0 auto;
+    width: 520px;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,13 +19,16 @@
 
 .product__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   line-height: 26px;
   font-weight: bold;
   font-size: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    br {
+      display: none;
+    }
+    margin-bottom: 30px;
     font-size: 21px;
   }
 }

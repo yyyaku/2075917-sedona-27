@@ -1,6 +1,6 @@
 .advantage {
   width: 100%;
-  padding: 33px 18px;
+  padding: 25px 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,19 +17,25 @@
   }
 }
 
+.advantage--line {
+  padding: 37px 18px;
+  background-color: #81b3d2;
+  color: rgb(255, 255, 255);
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 52px 33px 31px 33px;
+  }
+}
+
 .advantage--first {
   @media (max-width: @mobile-width-only) {
     background-image: url("../img/triangle-mobile.svg");
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
+    padding: 33px 18px 40px 18px;
   }
-}
-
-.advantage--line {
-  padding: 52px 33px 31px 33px;
-  background-color: #81b3d2;
-  color: rgb(255, 255, 255);
 }
 
 .advantage__title {
@@ -59,17 +65,9 @@
   text-transform: uppercase;
   line-height: 21px;
   font-size: 14px;
-}
-
-.advantage__picture {
-  height: 256px;
 
   @media (min-width: @tablet-width) {
-    width: 512px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 800px;
+    margin-top: 25px;
   }
 }
 
