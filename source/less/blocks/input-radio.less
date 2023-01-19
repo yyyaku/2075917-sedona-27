@@ -5,6 +5,14 @@
   padding: 0;
   margin-bottom: 34px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .input-radio::after {
@@ -27,8 +35,12 @@
   justify-content: center;
   margin-bottom: 20px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
   }
 }
 
@@ -75,8 +87,4 @@
   @media (min-width: @desktop-width) {
     padding: 0 53px;
   }
-}
-
-.input-radio__item {
-  width: 280px;
 }

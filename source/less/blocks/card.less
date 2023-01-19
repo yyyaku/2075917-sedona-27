@@ -1,4 +1,10 @@
 .card {
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 25px 0;
+  }
+
   @media (min-width: @tablet-width) {
     width: 324px;
   }
@@ -7,19 +13,36 @@
     position: relative;
     width: 400px;
   }
+}
 
-  .card__photo {
-    width: 280px;
-    height: 280px;
+.card::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 2px;
+    min-width: 320px;
+    background-color: #e5e5e5;
+    z-index: 0;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      width: 324px;
-      height: 267px;
-    }
+.card .card__photo {
+  width: 280px;
+  height: 280px;
 
-    @media (min-width: @desktop-width) {
-      width: 400px;
-    }
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
 
@@ -27,16 +50,22 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+}
 
-  .card__photo {
-    @media (min-width: @tablet-width) {
-      width: 648px;
-      height: 400px;
-    }
+.card--line .card__photo {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
 
-    @media (min-width: @desktop-width) {
-      width: 1200px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.card--line .card__panel {
+  @media (min-width: @desktop-width) {
+    padding: 0 20px;
   }
 }
 
@@ -58,6 +87,7 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    padding: 0 20px 0 25px;
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.25);
@@ -65,16 +95,9 @@
   }
 }
 
-.card__grade {
-  display: flex;
-  align-items: center;
-
-  @media (max-width: @tablet-width) {
-    margin-bottom: 50px;
-  }
-
-  @media (max-width: @tablet-width) {
-    margin-right: 20px;
+.card__text {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 12px;
   }
 }
 
@@ -83,6 +106,7 @@
   line-height: 21px;
   font-weight: bold;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .card__description {
