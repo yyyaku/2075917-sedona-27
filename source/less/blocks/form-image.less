@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: #314d59;
-  padding: 52px 0 67px 0;
+  padding: 52px 0 62px 0;
   text-align: center;
   position: relative;
 
@@ -14,11 +14,15 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
-    padding: 100px 0 120px 0;
+    padding: 95px 0 110px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 102px 0 115px 0;
   }
 }
 
