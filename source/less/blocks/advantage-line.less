@@ -1,23 +1,40 @@
-.advantage {
-  width: 100%;
-  padding: 25px 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(238, 238, 238);
+.advantage-line {
+  padding: 37px 18px;
+  background-color: #81b3d2;
+  color: rgb(255, 255, 255);
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 54px 33px;
+    padding: 56px 33px 31px 33px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 63px 50px 41px 50px;
+    padding: 52px 50px 51px 50px;
   }
 }
 
-.advantage__title {
+.advantage-line--first {
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../img/triangle-mobile.svg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 70px 18px 40px 18px;
+    z-index: 3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 52px 33px 31px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantage-line__title {
   margin: 0 auto;
   margin-bottom: 11px;
   text-align: center;
@@ -41,7 +58,7 @@
   }
 }
 
-.advantage__description {
+.advantage-line__description {
   margin: 0 auto;
   margin-top: 17px;
   text-align: center;

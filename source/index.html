@@ -15,7 +15,7 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo">
         <img src="img/logotype-phone.svg" width="185" height="96" alt="Седона.">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -46,6 +46,7 @@
     </header>
     <main class="main-container">
       <section class="index-image">
+        <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
         <picture>
           <source srcset="img/sedona-index-tablet.svg" media="(min-width: 768px)">
           <img class="index-image__image" src="img/sedona-index-mobile.svg" width="282" height="214"
@@ -61,12 +62,12 @@
         <div class="advantages__wrapper">
           <ol class="advantages__list">
             <li class="advantages__panorama">
-              <div class="advantage--line advantage--first">
-                <h3 class="advantage__title">Настоящий городок</h3>
-                <span class="advantage-number">— №1 —</span>
-                <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="advantage-line advantage-line--first">
+                <h3 class="advantage-line__title">Настоящий городок</h3>
+                <span class="advantage-line__number">— №1 —</span>
+                <p class="advantage-line__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="advantage__picture">
+              <div class="advantage-picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/main-city-desktop.webp 1x, img/main-city-desktop@2x.webp 2x">
@@ -78,8 +79,8 @@
                     srcset="img/main-city-desktop.jpg 1x, img/main-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/main-city-tablet.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                  <img src="img/main-city-mobile.jpg 1x" srcset="img/main-city-mobile@2x.jpg 2x" width="320"
-                    height="260" alt="Город Седона.">
+                  <img src="img/main-city-mobile.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260"
+                    alt="Город Седона.">
                 </picture>
               </div>
               <ul class="service">
@@ -113,12 +114,12 @@
               </ul>
             </li>
             <li class="advantages__panorama">
-              <div class="advantage--line">
-                <h3 class="advantage__title">Там есть<br> мост дьявола</h3>
-                <span class="advantage-number">— №2 —</span>
-                <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно.</p>
+              <div class="advantage-line">
+                <h3 class="advantage-line__title">Там есть<br> мост дьявола</h3>
+                <span class="advantage-line__number">— №2 —</span>
+                <p class="advantage-line__description">Да, по нему можно пройти! Если вы осмелитесь, конечно.</p>
               </div>
-              <div class="advantage__picture">
+              <div class="advantage-picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/main-bridge-desktop.webp 1x, img/main-bridge-desktop@2x.webp 2x">
@@ -130,7 +131,7 @@
                     srcset="img/main-bridge-desktop.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/main-bridge-tablet.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-                  <img src="img/main-bridge-mobile.jpg 1x" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320"
+                  <img src="img/main-bridge-mobile.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320"
                     height="260" alt="Каньон Седона.">
                 </picture>
               </div>
@@ -168,9 +169,10 @@
         </div>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Местоположение Седоны на онлайн-карте.</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1933566.0526713438!2d-112.96745163941516!3d34.98928759723114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672591722504!5m2!1sru!2sru"
-          width="320" height="350px" style="border: 0;" allowfullscreen="" loading="lazy"
+          width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
