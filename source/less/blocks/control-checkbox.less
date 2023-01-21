@@ -39,6 +39,14 @@
   background-color: #d5d5d5;
 }
 
+.control-checkbox__title:focus-visible::before {
+  background-color: #ffffff;
+}
+
+.control-checkbox__title:disabled::before {
+  background-color: #e5e5e5;
+}
+
 .control-checkbox__title::after {
   content: "";
   display: block;
@@ -55,5 +63,13 @@
 }
 
 .control-checkbox__title:active::after {
+  opacity: 0.3;
+}
+
+.control-checkbox__title:focus-visible::after {
+  opacity: 0;
+}
+
+.control-checkbox__title:disabled::after {
   opacity: 0.3;
 }

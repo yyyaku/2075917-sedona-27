@@ -8,6 +8,10 @@
   font-size: 18px;
 }
 
+.control-radio__input:checked + .control-radio__title::after {
+  opacity: 1;
+}
+
 .control-radio__title {
   font-size: 18px;
   font-weight: 700;
@@ -36,6 +40,14 @@
   background-color: #d5d5d5;
 }
 
+.control-radio__title:disabled::before {
+  background-color: #e5e5e5;
+}
+
+.control-radio__title:focus-visible::before {
+  background-color: #ffffff;
+}
+
 .control-radio__title::after {
   content: "";
   display: block;
@@ -54,6 +66,10 @@
   background-color: #a4a4a4;
 }
 
-.control-radio__input:checked + .control-radio__title::after {
-  opacity: 1;
+.control-radio__title:disabled::after {
+  background-color: #ffffff;
+}
+
+.control-radio__title:focus-visible::after {
+  background-color: #ffffff;
 }
